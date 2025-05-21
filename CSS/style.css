@@ -1,0 +1,111 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #444;
+  background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* Filter form styles */
+#filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+#filter-form input[type="number"] {
+  width: 250px;
+  height: 45px;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#filter-form button {
+  width: 120px;
+  height: 45px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dog images styles */
+#dog-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+#dog-images img {
+  width: 220px;
+  height: 220px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* Tablet styles */
+  #filter-form {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #filter-form input[type="number"] {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  #filter-form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile styles */
+  header {
+    padding: 15px;
+  }
+  #filter-form {
+    padding: 15px;
+  }
+  #dog-images img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
