@@ -10,7 +10,7 @@ public class DogImageServlet extends HttpServlet {
             response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid response code");
             return;
         }
-
+      //handling and exception
         try {
             URL url = new URL("https:                                      
             BufferedImage image = ImageIO.read(url);
