@@ -1,18 +1,47 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>HTTP Dog API</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Image Filter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HTTP Dog API</h1>
-    <form id="filter-form">
-        <input type="number" id="response-code" placeholder="Response code">
-        <button id="filter-button">Filter</button>
-    </form>
-    <div id="dog-images"></div>
-    <button id="save-list-button">Save List</button>
-    <div id="saved-lists"></div>
-    <script src="script.js"></script>
+  <header>
+    <h1>Dog Image Filter</h1>
+  </header>
+  <main>
+    <section id="filter-section">
+      <h2>Filter Dog Images</h2>
+      <form id="filter-form">
+        <label for="status-code">Status Code:</label>
+        <input type="number" id="status-code" name="status-code">
+        <button type="submit">Filter</button>
+      </form>
+    </section>
+    <section id="dog-images-section">
+      <h2>Dog Images</h2>
+      <div id="dog-images"></div>
+    </section>
+    <section id="user-section">
+      <h2>User Registration/Login</h2>
+      <form id="user-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Register/Login</button>
+      </form>
+    </section>
+    <section id="list-section">
+      <h2>Create List</h2>
+      <form id="list-form">
+        <label for="list-name">List Name:</label>
+        <input type="text" id="list-name" name="list-name">
+        <button type="submit">Create List</button>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
